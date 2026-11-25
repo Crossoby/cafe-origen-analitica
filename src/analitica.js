@@ -120,3 +120,19 @@ module.exports = {
 
 
 
+function ventasDelDia(ventas, fecha) {
+    return ventas.filter((venta) => venta.fecha === fecha);
+}
+
+Object.assign(module.exports, {
+    ventasDelDia,
+    ticketPromedio,
+    ventaMayor,
+    ValorVenta,
+    totalPorCiudad,
+    unidadesPorProducto,
+    topProductosPorValor
+});
+
+
+
